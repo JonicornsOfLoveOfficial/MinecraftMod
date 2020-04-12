@@ -18,6 +18,9 @@
     "usageCount": 2500,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": []
+    "repairItems": [],
+    "onEntityHitWith": {
+      "name": "ObsidianScytheMobIsHitWithTool"
+    }
   }
 }
