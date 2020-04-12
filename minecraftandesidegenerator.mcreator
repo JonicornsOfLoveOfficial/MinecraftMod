@@ -184,6 +184,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "Soul",
+      "type": "mob",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -194,7 +202,9 @@
       "item.minecraftandesidegenerator.emeraldinfusedgold": "Emerald Infused Gold",
       "block.minecraftandesidegenerator.endriumore": "Endrium Ore",
       "item.minecraftandesidegenerator.obsidianscythe": "Obsidian Scythe",
+      "entity.minecraftandesidegenerator.soul": "Soul",
       "block.minecraftandesidegenerator.andesidegenerator": "Andeside Generator",
+      "item.minecraftandesidegenerator.soul": "Soul Spawn Egg",
       "item.minecraftandesidegenerator.luckypickaxe": "Emerald Pickaxe",
       "item.minecraftandesidegenerator.luckygem": "Lump of gold and emerald",
       "item.minecraftandesidegenerator.endriumlump": "Endrium Lump"
