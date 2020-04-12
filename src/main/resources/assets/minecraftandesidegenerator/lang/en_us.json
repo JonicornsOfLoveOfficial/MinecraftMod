@@ -7,5 +7,6 @@
   "block.minecraftandesidegenerator.andesidegenerator": "Andeside Generator",
   "item.minecraftandesidegenerator.luckypickaxe": "Emerald Pickaxe",
   "item.minecraftandesidegenerator.luckygem": "Lump of gold and emerald",
-  "item.minecraftandesidegenerator.endriumlump": "Endrium Lump"
+  "item.minecraftandesidegenerator.endriumlump": "Endrium Lump",
+  "block.minecraftandesidegenerator.testplant": "Testplant"
 }

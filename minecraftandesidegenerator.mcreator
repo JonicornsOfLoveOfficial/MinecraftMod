@@ -192,6 +192,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Testplant",
+      "type": "plant",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -206,7 +214,8 @@
       "block.minecraftandesidegenerator.andesidegenerator": "Andeside Generator",
       "item.minecraftandesidegenerator.luckypickaxe": "Emerald Pickaxe",
       "item.minecraftandesidegenerator.luckygem": "Lump of gold and emerald",
-      "item.minecraftandesidegenerator.endriumlump": "Endrium Lump"
+      "item.minecraftandesidegenerator.endriumlump": "Endrium Lump",
+      "block.minecraftandesidegenerator.testplant": "Testplant"
     }
   },
   "workspaceSettings": {
