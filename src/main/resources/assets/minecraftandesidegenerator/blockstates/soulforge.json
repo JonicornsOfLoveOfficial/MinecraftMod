@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "minecraftandesidegenerator:block/soulforge"
+    },
+    "facing=east": {
+      "model": "minecraftandesidegenerator:block/soulforge",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minecraftandesidegenerator:block/soulforge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minecraftandesidegenerator:block/soulforge",
+      "y": 270
+    }
+  }
+}

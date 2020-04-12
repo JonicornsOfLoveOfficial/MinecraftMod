@@ -224,6 +224,50 @@
           }
         ]
       }
+    },
+    {
+      "name": "SoulForge",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SoulforgeButton",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoulforgeGui",
+      "type": "gui",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -245,7 +289,8 @@
       "item.minecraftandesidegenerator.luckypickaxe": "Emerald Pickaxe",
       "item.minecraftandesidegenerator.luckygem": "Lump of gold and emerald",
       "item.minecraftandesidegenerator.endriumlump": "Endrium Lump",
-      "item.minecraftandesidegenerator.soulitem": "Soul"
+      "item.minecraftandesidegenerator.soulitem": "Soul",
+      "block.minecraftandesidegenerator.soulforge": "Soul Forge"
     }
   },
   "workspaceSettings": {
