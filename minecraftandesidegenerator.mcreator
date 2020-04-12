@@ -184,6 +184,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "TestBlock",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -191,6 +199,7 @@
   "language_map": {
     "en_us": {
       "item.minecraftandesidegenerator.endriumingot": "Endriumingot",
+      "block.minecraftandesidegenerator.testblock": "Test Block",
       "item.minecraftandesidegenerator.emeraldinfusedgold": "Emerald Infused Gold",
       "block.minecraftandesidegenerator.endriumore": "Endrium Ore",
       "item.minecraftandesidegenerator.obsidianscythe": "Obsidian Scythe",
