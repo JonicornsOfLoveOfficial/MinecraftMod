@@ -186,8 +186,8 @@
       }
     },
     {
-      "name": "Soul",
-      "type": "mob",
+      "name": "SoulItem",
+      "type": "item",
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
@@ -196,7 +196,7 @@
     {
       "name": "ObsidianScytheMobIsHitWithTool",
       "type": "procedure",
-      "sortid": 17,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -224,25 +224,16 @@
           }
         ]
       }
-    },
-    {
-      "name": "SoulRightClickedOnEntity",
-      "type": "procedure",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "sense",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
@@ -250,12 +241,11 @@
       "item.minecraftandesidegenerator.emeraldinfusedgold": "Emerald Infused Gold",
       "block.minecraftandesidegenerator.endriumore": "Endrium Ore",
       "item.minecraftandesidegenerator.obsidianscythe": "Obsidian Scythe",
-      "entity.minecraftandesidegenerator.soul": "Soul",
       "block.minecraftandesidegenerator.andesidegenerator": "Andeside Generator",
-      "item.minecraftandesidegenerator.soul": "Soul Spawn Egg",
       "item.minecraftandesidegenerator.luckypickaxe": "Emerald Pickaxe",
       "item.minecraftandesidegenerator.luckygem": "Lump of gold and emerald",
-      "item.minecraftandesidegenerator.endriumlump": "Endrium Lump"
+      "item.minecraftandesidegenerator.endriumlump": "Endrium Lump",
+      "item.minecraftandesidegenerator.soulitem": "Soul"
     }
   },
   "workspaceSettings": {

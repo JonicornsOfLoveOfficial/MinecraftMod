@@ -1,16 +1,19 @@
 package net.mcreator.minecraftandesidegenerator.procedures;
 
 import net.minecraft.world.World;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.minecraftandesidegenerator.entity.SoulEntity;
+import net.mcreator.minecraftandesidegenerator.item.SoulItemItem;
 import net.mcreator.minecraftandesidegenerator.MinecraftAndesideGeneratorElements;
 
 @MinecraftAndesideGeneratorElements.ModElement.Tag
 public class ObsidianScytheMobIsHitWithToolProcedure extends MinecraftAndesideGeneratorElements.ModElement {
 	public ObsidianScytheMobIsHitWithToolProcedure(MinecraftAndesideGeneratorElements instance) {
-		super(instance, 17);
+		super(instance, 16);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -40,10 +43,15 @@ public class ObsidianScytheMobIsHitWithToolProcedure extends MinecraftAndesideGe
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
 		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) == 0)) {
-			if (!world.isRemote) {
-				Entity entityToSpawn = new SoulEntity.CustomEntity(SoulEntity.entity, world);
-				entityToSpawn.setLocationAndAngles(x, y, z, world.rand.nextFloat() * 360F, 0);
-				world.addEntity(entityToSpawn);
+			if ((Math.random() > 0.95)) {
+				if (!world.isRemote) {
+					ItemEntity entityToSpawn = new ItemEntity(world, x, y, z, new ItemStack(SoulItemItem.block, (int) (1)));
+					entityToSpawn.setPickupDelay(10);
+					world.addEntity(entityToSpawn);
+				}
+			} else {
+				if (entity instanceof PlayerEntity)
+					((PlayerEntity) entity).giveExperiencePoints((int) 1);
 			}
 		}
 	}
