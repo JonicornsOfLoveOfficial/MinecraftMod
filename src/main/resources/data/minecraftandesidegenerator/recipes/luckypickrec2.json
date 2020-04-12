@@ -1,0 +1,26 @@
+{
+  "group": "minecraftandesidegenerator",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraftandesidegenerator:emeraldinfusedgold"
+    },
+    "1": {
+      "item": "minecraftandesidegenerator:emeraldinfusedgold"
+    },
+    "2": {
+      "item": "minecraftandesidegenerator:emeraldinfusedgold"
+    },
+    "4": {
+      "item": "minecraft:golden_pickaxe"
+    }
+  },
+  "result": {
+    "item": "minecraftandesidegenerator:luckypickaxe",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "Soul": "soul"
+      },
+      "name": "default"
+    }
+  }
+}
