@@ -12,10 +12,13 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
@@ -27,6 +30,7 @@ import net.minecraft.client.renderer.entity.model.RendererModel;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
+import net.mcreator.minecraftandesidegenerator.procedures.SoulRightClickedOnEntityProcedure;
 import net.mcreator.minecraftandesidegenerator.MinecraftAndesideGeneratorElements;
 
 @MinecraftAndesideGeneratorElements.ModElement.Tag
@@ -101,6 +105,21 @@ public class SoulEntity extends MinecraftAndesideGeneratorElements.ModElement {
 		@Override
 		protected float getSoundVolume() {
 			return 1.0F;
+		}
+
+		@Override
+		public boolean processInteract(PlayerEntity entity, Hand hand) {
+			super.processInteract(entity, hand);
+			int x = (int) this.posX;
+			int y = (int) this.posY;
+			int z = (int) this.posZ;
+			ItemStack itemstack = entity.getHeldItem(hand);
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				SoulRightClickedOnEntityProcedure.executeProcedure($_dependencies);
+			}
+			return true;
 		}
 
 		@Override
