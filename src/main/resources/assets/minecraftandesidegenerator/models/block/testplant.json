@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "minecraftandesidegenerator:blocks/soul",
-    "particle": "minecraftandesidegenerator:blocks/soul"
-  }
-}
