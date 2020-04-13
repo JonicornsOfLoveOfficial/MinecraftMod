@@ -283,8 +283,8 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -309,6 +309,12 @@
   "variable_elements": [
     {
       "name": "sense",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "tickvar",
       "type": "number",
       "scope": "map",
       "value": "0"

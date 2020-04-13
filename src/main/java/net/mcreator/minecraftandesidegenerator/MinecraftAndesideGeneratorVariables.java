@@ -56,6 +56,7 @@ public class MinecraftAndesideGeneratorVariables {
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "minecraftandesidegenerator_mapvars";
 		public double sense = 0;
+		public double tickvar = 0;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -67,11 +68,13 @@ public class MinecraftAndesideGeneratorVariables {
 		@Override
 		public void read(CompoundNBT nbt) {
 			sense = nbt.getDouble("sense");
+			tickvar = nbt.getDouble("tickvar");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
 			nbt.putDouble("sense", sense);
+			nbt.putDouble("tickvar", tickvar);
 			return nbt;
 		}
 
