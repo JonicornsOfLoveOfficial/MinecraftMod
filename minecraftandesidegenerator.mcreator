@@ -268,6 +268,42 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "FlyingPearlRightClickedInAir",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlyingPearl",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Flyingpearltool",
+      "type": "tool",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [
@@ -281,15 +317,17 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.minecraftandesidegenerator.endriumingot": "Endriumingot",
-      "item.minecraftandesidegenerator.emeraldinfusedgold": "Emerald Infused Gold",
       "block.minecraftandesidegenerator.endriumore": "Endrium Ore",
-      "item.minecraftandesidegenerator.obsidianscythe": "Obsidian Scythe",
       "block.minecraftandesidegenerator.andesidegenerator": "Andeside Generator",
       "item.minecraftandesidegenerator.luckypickaxe": "Emerald Pickaxe",
       "item.minecraftandesidegenerator.luckygem": "Lump of gold and emerald",
-      "item.minecraftandesidegenerator.endriumlump": "Endrium Lump",
       "item.minecraftandesidegenerator.soulitem": "Soul",
+      "item.minecraftandesidegenerator.endriumingot": "Endriumingot",
+      "item.minecraftandesidegenerator.emeraldinfusedgold": "Emerald Infused Gold",
+      "item.minecraftandesidegenerator.obsidianscythe": "Obsidian Scythe",
+      "item.minecraftandesidegenerator.flyingpearl": "Flying Pearl",
+      "item.minecraftandesidegenerator.flyingpearltool": "Flyingpearltool",
+      "item.minecraftandesidegenerator.endriumlump": "Endrium Lump",
       "block.minecraftandesidegenerator.soulforge": "Soul Forge"
     }
   },

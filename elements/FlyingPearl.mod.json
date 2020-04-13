@@ -1,0 +1,27 @@
+{
+  "_fv": 6,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "lying_ender_pearl",
+    "customModelName": "Normal",
+    "name": "Flying Pearl",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 2.0,
+    "damageCount": 100,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
+    "hasGlow": true,
+    "onRightClickedInAir": {
+      "name": "FlyingPearlRightClickedInAir"
+    }
+  }
+}
